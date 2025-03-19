@@ -124,4 +124,35 @@
             ]
         }
     },
+    //debuging
+    {
+        "key": "space d a",
+        "command": "workbench.action.debug.selectandstart",
+        "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus) && debuggersAvailable"
+    },
+    {
+        "key": "space d t",
+        "command": "workbench.action.debug.stop",
+        "when": "vim.mode == 'Normal' && editorTextFocus && inDebugMode && !focusedSessionIsAttached"
+    },
+    {
+        "key": "space d o",
+        "command": "workbench.action.debug.stepOver",
+        "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus) && inDebugMode && debugState == 'stopped'"
+    },
+    {
+        "key": "space d b",
+        "command": "editor.debug.action.toggleBreakpoint",
+        "when": "vim.mode == 'Normal' && editorTextFocus"
+    },
+    {
+        "key": "space d e",
+        "command": "editor.debug.action.showDebugHover",
+        "when": "vim.mode == 'Normal' && editorTextFocus && inDebugMode && debugState == 'stopped'"
+    },
+    {
+        "key": "space d c",
+        "command": "workbench.action.debug.continue",
+        "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus) && inDebugMode && debugState == 'stopped'"
+    }
 ]
