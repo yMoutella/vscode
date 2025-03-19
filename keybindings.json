@@ -34,12 +34,12 @@
     },
     {
         "key": "ctrl-d",
-        "command": "scrollPageDown",
+        "command": "cursorPageDown",
         "when": "vim.mode != 'Insert' && editorTextFocus"
     },
     {
         "key": "ctrl-u",
-        "command": "scrollPageUp",
+        "command": "cursorPageUp",
         "when": "vim.mode != 'Insert' && editorTextFocus"
     },
     {
