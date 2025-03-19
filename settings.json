@@ -3,8 +3,8 @@
         "asvetliakov.vscode-neovim": 1
     },
     "window.titleBarStyle": "custom",
-    "symbols.hidesExplorerArrows": false,
-    "symbols.hidesExplorerArrows": false,
+     "symbols.hidesExplorerArrows": false,
+     "symbols.hidesExplorerArrows": false,
     "editor.fontFamily": "JetBrainsMono Nerd Font",
     "editor.lineHeight": 1.8,
     "workbench.startupEditor": "newUntitledFile",
@@ -41,5 +41,6 @@
     "editor.wordWrap": "on",
     "workbench.colorTheme": "Catppuccin Mocha",
     "redhat.telemetry.enabled": true,
-    "vim.useSystemClipboard": true
+    "vim.useSystemClipboard": true,
+    "glassit.alpha": 240
 }
