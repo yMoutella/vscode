@@ -154,5 +154,20 @@
         "key": "space d c",
         "command": "workbench.action.debug.continue",
         "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus) && inDebugMode && debugState == 'stopped'"
+    },
+
+    //special
+
+    {
+        "key": "ctrl-s",
+        "command": "runCommands",
+        "args": {
+            "commands": [
+                "workbench.action.files.save",
+                "extension.vim_escape"
+            ],
+            "when": "vim.mode == 'Normal' || vim.mode == 'Insert'"
+        }
     }
+
 ]
