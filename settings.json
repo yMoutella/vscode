@@ -19,6 +19,7 @@
     "window.menuBarVisibility": "toggle",
     "git.enableSmartCommit": true,
     "git.autofetch": true,
+    "scm.diffDecorations": "overview",
     "terminal.integrated.defaultProfile.windows": "Command Prompt",
     "editor.hideCursorInOverviewRuler": true,
     "editor.overviewRulerBorder": true,
