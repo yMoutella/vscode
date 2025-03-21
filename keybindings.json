@@ -32,16 +32,16 @@
         "command": "editor.action.moveLinesDownAction",
         "when": "vim.mode != 'Insert' && editorTextFocus"
     },
-    {
-        "key": "ctrl-d",
-        "command": "cursorPageDown",
-        "when": "vim.mode != 'Insert' && editorTextFocus"
-    },
-    {
-        "key": "ctrl-u",
-        "command": "cursorPageUp",
-        "when": "vim.mode != 'Insert' && editorTextFocus"
-    },
+    // {
+    //     "key": "ctrl-d",
+    //     "command": "cursorPageDown",
+    //     "when": "vim.mode != 'Insert' && editorTextFocus"
+    // },
+    // {
+    //     "key": "ctrl-u",
+    //     "command": "cursorPageUp",
+    //     "when": "vim.mode != 'Insert' && editorTextFocus"
+    // },
     {
         "key": "shift-k",
         "command": "editor.action.moveLinesUpAction",
