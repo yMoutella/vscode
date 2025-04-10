@@ -32,16 +32,16 @@
         "command": "editor.action.moveLinesDownAction",
         "when": "vim.mode != 'Insert' && editorTextFocus"
     },
-    // {
-    //     "key": "ctrl-d",
-    //     "command": "cursorPageDown",
-    //     "when": "vim.mode != 'Insert' && editorTextFocus"
-    // },
-    // {
-    //     "key": "ctrl-u",
-    //     "command": "cursorPageUp",
-    //     "when": "vim.mode != 'Insert' && editorTextFocus"
-    // },
+    {
+        "key": "ctrl-d",
+        "command": "cursorPageDown",
+        "when": "vim.mode != 'Insert' && editorTextFocus"
+    },
+    {
+        "key": "ctrl-u",
+        "command": "cursorPageUp",
+        "when": "vim.mode != 'Insert' && editorTextFocus"
+    },
     {
         "key": "shift-k",
         "command": "editor.action.moveLinesUpAction",
@@ -77,6 +77,7 @@
         "command": "workbench.action.quickOpen",
         "when": "vim.mode == 'Normal' && editorTextFocus"
     },
+    //Explorer
     {
         "key": "r",
         "command": "renameFile",
@@ -167,5 +168,25 @@
             ],
             "when": "vim.mode == 'Normal' || vim.mode == 'Insert'"
         }
+    },
+    {
+        "key": "g shift+i",
+        "command": "editor.action.goToImplementation",
+        "when": "editorHasImplementationProvider && editorTextFocus"
+    },
+    {
+        "key": "ctrl+f12",
+        "command": "-editor.action.goToImplementation",
+        "when": "editorHasImplementationProvider && editorTextFocus"
+    },
+    {
+        "key": "g shift+i",
+        "command": "editor.action.goToImplementation",
+        "when": "editorHasImplementationProvider && editorTextFocus && !isInEmbeddedEditor"
+    },
+    {
+        "key": "ctrl+f12",
+        "command": "-editor.action.goToImplementation",
+        "when": "editorHasImplementationProvider && editorTextFocus && !isInEmbeddedEditor"
     }
 ]
