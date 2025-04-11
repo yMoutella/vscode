@@ -172,21 +172,6 @@
     {
         "key": "g shift+i",
         "command": "editor.action.goToImplementation",
-        "when": "editorHasImplementationProvider && editorTextFocus"
+        "when": "vim.mode == 'Normal' && editorTextFocus && editorHasImplementationProvider"
     },
-    {
-        "key": "ctrl+f12",
-        "command": "-editor.action.goToImplementation",
-        "when": "editorHasImplementationProvider && editorTextFocus"
-    },
-    {
-        "key": "g shift+i",
-        "command": "editor.action.goToImplementation",
-        "when": "editorHasImplementationProvider && editorTextFocus && !isInEmbeddedEditor"
-    },
-    {
-        "key": "ctrl+f12",
-        "command": "-editor.action.goToImplementation",
-        "when": "editorHasImplementationProvider && editorTextFocus && !isInEmbeddedEditor"
-    }
 ]
