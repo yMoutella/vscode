@@ -40,7 +40,7 @@
   "editor.wordWrap": "on",
   "redhat.telemetry.enabled": true,
   "vim.useSystemClipboard": true,
-  "glassit.alpha": 250,
+  "glassit.alpha": 255,
   "workbench.sideBar.location": "right",
   "[java]": {
     "editor.defaultFormatter": "redhat.java"
@@ -109,10 +109,10 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "prettier.semi": false
   },
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   }
 }
-
